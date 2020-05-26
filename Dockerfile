@@ -11,3 +11,5 @@ RUN apk update \
     && rm -rf /var/cache/apk/* \
     && rm -rf /tmp/* \
     && rm -rf /var/tmp/*
+
+ENTRYPOINT ["/usr/bin/nmap"]
